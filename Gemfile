@@ -47,7 +47,7 @@ group :development, :test do
   gem "faker"
   gem "launchy"
   gem "database_cleaner"
-  gem "capybara-webkit"
+  # gem "capybara-webkit"
   gem "selenium-webdriver"
   gem "jasmine"
   gem "pry-rails"
