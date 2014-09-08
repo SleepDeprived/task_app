@@ -12,8 +12,8 @@ Rails.application.routes.draw do
   get 'users/destroy'
 
   devise_for :users
-  root to: 'welcome#login'
-  get 'welcome/login'
+  root to: 'welcome#to_do'
+  get 'welcome/to_do'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
-  def login
+  def to_do
 
   end
 end
