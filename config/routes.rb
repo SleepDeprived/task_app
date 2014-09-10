@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   root to: 'welcome#to_do'
   get 'welcome/to_do'
 
+  resources :tasks
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
