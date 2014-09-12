@@ -6,12 +6,11 @@ validates_presence_of :name
 
 # belongs_to :priority
 
-  def budgeted_time_output(time_in_seconds)
+  def time_as_string(time_in_seconds)
     hours = calculate_hours(time_in_seconds)
     minutes = calculate_minutes(time_in_seconds)
     concat_strings = hours > 0 && minutes > 0 ? " and " : ""
     time_unit_as_string(hours, "hour") + concat_strings + time_unit_as_string(minutes, "minute")
-
   end
 
   def time_unit_as_string(time_quantity, singular_time_unit)

@@ -10,16 +10,13 @@
     <!-- priority.name -->
   </div>
   <div>
-    Budgeted Time: <%= task.calculate_hours(task.budgeted_time) %> hours, <%= task.calculate_hours(task.budgeted_time) %> minutes
+    Budgeted Time: <%= task.time_as_string(task.budgeted_time) %>
   </div>
   <div>
     <%= task.kind %>
   </div>
   <div>
-    <%= task.budgeted_time %>
-  </div>
-  <div>
-    <%= task.total_time %>
+    Total Time: <%= task.total_time.blank? ? 0 : task.time_as_string(task.total_time) %>
   </div>
   <div>
     <%= task.task_type %>
