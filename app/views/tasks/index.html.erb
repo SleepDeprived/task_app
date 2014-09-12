@@ -1,1 +1,29 @@
 <p>these will be tasks</p>
+
+
+
+<% @tasks.each do |task| %>
+  <div data="#{task.id}">
+    <%= task.name %>
+  </div>
+  <div>
+    <!-- priority.name -->
+  </div>
+  <div>
+    <!-- project.name -->
+  </div>
+  <div>
+    <%= task.kind %>
+  </div>
+  <div>
+    <%= task.budgeted_time %>
+  </div>
+  <div>
+    <%= task.total_time %>
+  </div>
+  <div>
+    <%= task.task_type %>
+  </div>
+<% end %>
+
+
