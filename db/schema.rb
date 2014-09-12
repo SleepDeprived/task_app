@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140910022122) do
+ActiveRecord::Schema.define(version: 20140912021414) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20140910022122) do
   create_table "tasks", force: true do |t|
     t.string   "name"
     t.integer  "priority_id"
-    t.string   "type"
+    t.string   "kind"
     t.integer  "project_id"
     t.integer  "budgeted_time"
     t.integer  "total_time"
